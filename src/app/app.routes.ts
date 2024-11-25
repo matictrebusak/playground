@@ -6,6 +6,10 @@ export const routes: Routes = [
     loadComponent: () => import('./home/home.component'),
   },
   {
+    path: 'my-nav',
+    loadComponent: () => import('./my-nav/my-nav.component'),
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home',
